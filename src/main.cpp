@@ -117,7 +117,7 @@ void setup()
 {
   // put your setup code here, to run once:
 
-  attachInterrupt(pinCoin, Callback_Coin, RISING);
+  attachInterrupt(digitalPinToInterrupt(pinCoin), Callback_Coin, RISING);
   stateCatcher = IDLE;
 }
 
